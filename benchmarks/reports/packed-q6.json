@@ -1,0 +1,104 @@
+{
+  "median_paired_wall_reduction": 0.06846528542522079,
+  "exact_scores": true,
+  "expected_q6_routes": true,
+  "passes_screen": true,
+  "rows": [
+    {
+      "case": "2d-0338",
+      "role": "control",
+      "wall_s": 46.40015634000156,
+      "ffn_s": 20.147217037,
+      "q6_batches": 1,
+      "peak_rss_mib": 1554.83984375,
+      "swap_kib": 0,
+      "major_faults": 0,
+      "background_cores": 0.3135270039480114,
+      "exact_scores": true
+    },
+    {
+      "case": "2d-0338",
+      "role": "candidate",
+      "wall_s": 43.974260987997695,
+      "ffn_s": 17.766337835,
+      "q6_batches": 11,
+      "peak_rss_mib": 1431.81640625,
+      "swap_kib": 0,
+      "major_faults": 0,
+      "background_cores": 0.3242183877494016,
+      "exact_scores": true
+    },
+    {
+      "case": "2d-0206",
+      "role": "candidate",
+      "wall_s": 43.452651945997786,
+      "ffn_s": 17.075808628,
+      "q6_batches": 11,
+      "peak_rss_mib": 1431.6171875,
+      "swap_kib": 0,
+      "major_faults": 0,
+      "background_cores": 0.29493415076085816,
+      "exact_scores": true
+    },
+    {
+      "case": "2d-0206",
+      "role": "control",
+      "wall_s": 47.138745737000136,
+      "ffn_s": 20.749231893,
+      "q6_batches": 1,
+      "peak_rss_mib": 1554.33984375,
+      "swap_kib": 0,
+      "major_faults": 0,
+      "background_cores": 0.3280524281718851,
+      "exact_scores": true
+    },
+    {
+      "case": "2d-0221",
+      "role": "control",
+      "wall_s": 46.71845413799747,
+      "ffn_s": 20.529531257,
+      "q6_batches": 1,
+      "peak_rss_mib": 1554.55859375,
+      "swap_kib": 0,
+      "major_faults": 0,
+      "background_cores": 0.32359647336242153,
+      "exact_scores": true
+    },
+    {
+      "case": "2d-0221",
+      "role": "candidate",
+      "wall_s": 43.62135629399563,
+      "ffn_s": 17.33559566,
+      "q6_batches": 11,
+      "peak_rss_mib": 1431.4296875,
+      "swap_kib": 0,
+      "major_faults": 0,
+      "background_cores": 0.31434907497104736,
+      "exact_scores": true
+    },
+    {
+      "case": "2d-0224",
+      "role": "candidate",
+      "wall_s": 43.53680433900445,
+      "ffn_s": 17.215623475,
+      "q6_batches": 11,
+      "peak_rss_mib": 1431.3359375,
+      "swap_kib": 0,
+      "major_faults": 0,
+      "background_cores": 0.3039409575623113,
+      "exact_scores": true
+    },
+    {
+      "case": "2d-0224",
+      "role": "control",
+      "wall_s": 46.84589309099829,
+      "ffn_s": 20.572184707,
+      "q6_batches": 1,
+      "peak_rss_mib": 1554.3046875,
+      "swap_kib": 0,
+      "major_faults": 0,
+      "background_cores": 0.30156193142819165,
+      "exact_scores": true
+    }
+  ]
+}

@@ -1,0 +1,1112 @@
+{
+  "scope": "three rotated hard-case fresh-process pairs per schedule and one warm-up per role",
+  "selected": "conv_only",
+  "exact_d179_control_scores": true,
+  "late_role": "ffn_only",
+  "results": {
+    "control": {
+      "quality_screen": true,
+      "winner_matches": 3,
+      "max_confidence_drift": 0.045695755524644666,
+      "exercised_padding": false,
+      "median_engine_seconds": 16.530071574,
+      "median_wall_seconds": 18.729139674978796,
+      "median_vision_seconds": 9.414829339,
+      "peak_rss_mib": 1584.1640625,
+      "median_paired_engine_gain_seconds": 0.0,
+      "median_paired_wall_gain_seconds": 0.0
+    },
+    "conv_only": {
+      "quality_screen": true,
+      "winner_matches": 3,
+      "max_confidence_drift": 0.04294355630502977,
+      "exercised_padding": true,
+      "median_engine_seconds": 16.119477492,
+      "median_wall_seconds": 18.52824863800197,
+      "median_vision_seconds": 8.966273522,
+      "peak_rss_mib": 1584.38671875,
+      "median_paired_engine_gain_seconds": 0.6205009910000001,
+      "median_paired_wall_gain_seconds": 0.40433309198124334
+    },
+    "all_early": {
+      "quality_screen": false,
+      "winner_matches": 3,
+      "max_confidence_drift": 0.05079268160904882,
+      "exercised_padding": true,
+      "median_engine_seconds": 15.851854425,
+      "median_wall_seconds": 17.537200325983576,
+      "median_vision_seconds": 8.233374163,
+      "peak_rss_mib": 1571.83203125,
+      "median_paired_engine_gain_seconds": 0.8741440520000019,
+      "median_paired_wall_gain_seconds": 1.0123373929818626
+    }
+  },
+  "timing_uncontended_screen": false,
+  "max_background_cores": 0.25,
+  "throttled_before": "throttled=0x0",
+  "throttled_after": "throttled=0x0",
+  "warmup": [
+    {
+      "scene": "trail",
+      "seconds": 18.037909418,
+      "positions": 350,
+      "max_rss_kib": 1609516,
+      "sampled_swap_kib": 0,
+      "probabilities": {
+        "blue": 0.002950255040341926,
+        "red": 0.993101850921303,
+        "yellow": 0.0039478940383550175
+      },
+      "reference": {
+        "blue": 0.0004096035812126519,
+        "red": 0.9988557340538123,
+        "yellow": 0.000734662364974942
+      },
+      "winner": "red",
+      "reference_winner": "red",
+      "max_abs_probability_delta": 0.005753883132509352,
+      "passed_quality_screen": true,
+      "wall_seconds": 19.332360553991748,
+      "child_cpu_seconds": 51.159404,
+      "major_faults": 426,
+      "block_input_operations": 56152,
+      "machine_active_cpu_seconds": 57.56,
+      "background_cpu_cores": 0.3310819691224104,
+      "timing_uncontended": false,
+      "ffn_rows": 1051,
+      "ffn_reused_rows": 637,
+      "vision_ffn_rows": 16800,
+      "vision_ffn_reused_rows": 10192,
+      "vision_keys": 7200,
+      "vision_attended_keys": 4500,
+      "phases_s": {
+        "vision": 8.625275394,
+        "prompt": 0.103214207,
+        "backbone_score": 9.309419817
+      },
+      "backbone_parts_s": {
+        "convolution": 1.397400013,
+        "attention": 2.19592369,
+        "ffn": 5.697616704,
+        "tail": 0.015146332,
+        "other": 0.003333078000000711
+      },
+      "sparse_active_rows": 66,
+      "sparse_causal_support_rows": 146,
+      "vision_grouped_blocks": 6,
+      "vision_grouped_rows": 300,
+      "vision_grouped_late_queries": 900,
+      "vision_early_groups": [
+        557,
+        430,
+        387
+      ],
+      "late_ffn_layers": 19,
+      "late_ffn_reused_rows": 41,
+      "frozen_operator_reuse": {
+        "kv_rows": 209,
+        "conv_rows": 54
+      },
+      "vision_fmla": {
+        "batches": 0,
+        "pad_rows": 0
+      },
+      "vision_value12_layers": 3,
+      "q6_i16_batches": 10,
+      "q6_i16_fallback": {
+        "batches": 1,
+        "rows": 7
+      },
+      "q4_i8": {
+        "batches": 107,
+        "rows": 10782,
+        "padded": 214
+      },
+      "vision_q8_ilp": {
+        "batches": 18,
+        "rows": 5400
+      },
+      "vision_q8_resident": {
+        "batches": 46,
+        "rows": 36372,
+        "padded": 60
+      },
+      "question": "bicycle_color",
+      "role": "all_early",
+      "warmup": true,
+      "exact_d179_score": false
+    },
+    {
+      "scene": "trail",
+      "seconds": 19.082031835,
+      "positions": 350,
+      "max_rss_kib": 1622412,
+      "sampled_swap_kib": 0,
+      "probabilities": {
+        "blue": 0.002515168775512918,
+        "red": 0.9932643470183011,
+        "yellow": 0.004220484206185855
+      },
+      "reference": {
+        "blue": 0.0004096035812126519,
+        "red": 0.9988557340538123,
+        "yellow": 0.000734662364974942
+      },
+      "winner": "red",
+      "reference_winner": "red",
+      "max_abs_probability_delta": 0.005591387035511208,
+      "passed_quality_screen": true,
+      "wall_seconds": 24.392238703003386,
+      "child_cpu_seconds": 53.943543000000005,
+      "major_faults": 1032,
+      "block_input_operations": 169400,
+      "machine_active_cpu_seconds": 62.49,
+      "background_cpu_cores": 0.350376080853443,
+      "timing_uncontended": false,
+      "ffn_rows": 1051,
+      "ffn_reused_rows": 634,
+      "vision_ffn_rows": 16800,
+      "vision_ffn_reused_rows": 10189,
+      "vision_keys": 7200,
+      "vision_attended_keys": 4500,
+      "phases_s": {
+        "vision": 9.990397618,
+        "prompt": 0.004722202,
+        "backbone_score": 9.086912015
+      },
+      "backbone_parts_s": {
+        "convolution": 1.370810589,
+        "attention": 2.170146852,
+        "ffn": 5.526794271,
+        "tail": 0.015766803,
+        "other": 0.003393499999999605
+      },
+      "sparse_active_rows": 66,
+      "sparse_causal_support_rows": 139,
+      "vision_grouped_blocks": 6,
+      "vision_grouped_rows": 300,
+      "vision_grouped_late_queries": 900,
+      "vision_early_groups": [
+        559,
+        431,
+        388
+      ],
+      "late_ffn_layers": 19,
+      "late_ffn_reused_rows": 41,
+      "frozen_operator_reuse": {
+        "kv_rows": 209,
+        "conv_rows": 50
+      },
+      "vision_fmla": {
+        "batches": 36,
+        "pad_rows": 111
+      },
+      "vision_value12_layers": 3,
+      "q6_i16_batches": 10,
+      "q6_i16_fallback": {
+        "batches": 1,
+        "rows": 7
+      },
+      "q4_i8": {
+        "batches": 107,
+        "rows": 10788,
+        "padded": 208
+      },
+      "vision_q8_ilp": {
+        "batches": 18,
+        "rows": 5400
+      },
+      "vision_q8_resident": {
+        "batches": 10,
+        "rows": 7556,
+        "padded": 4
+      },
+      "question": "bicycle_color",
+      "role": "conv_only",
+      "warmup": true,
+      "exact_d179_score": false
+    },
+    {
+      "scene": "trail",
+      "seconds": 16.390129997,
+      "positions": 350,
+      "max_rss_kib": 1622184,
+      "sampled_swap_kib": 0,
+      "probabilities": {
+        "blue": 0.002555695267193768,
+        "red": 0.9935186107365133,
+        "yellow": 0.003925693996293006
+      },
+      "reference": {
+        "blue": 0.0004096035812126519,
+        "red": 0.9988557340538123,
+        "yellow": 0.000734662364974942
+      },
+      "winner": "red",
+      "reference_winner": "red",
+      "max_abs_probability_delta": 0.005337123317299075,
+      "passed_quality_screen": true,
+      "wall_seconds": 22.355564910016255,
+      "child_cpu_seconds": 53.347519999999996,
+      "major_faults": 497,
+      "block_input_operations": 135768,
+      "machine_active_cpu_seconds": 59.85,
+      "background_cpu_cores": 0.2908662798803449,
+      "timing_uncontended": false,
+      "ffn_rows": 1051,
+      "ffn_reused_rows": 640,
+      "vision_ffn_rows": 16800,
+      "vision_ffn_reused_rows": 10189,
+      "vision_keys": 7200,
+      "vision_attended_keys": 4500,
+      "phases_s": {
+        "vision": 9.466752157,
+        "prompt": 0.057161271,
+        "backbone_score": 6.866216569
+      },
+      "backbone_parts_s": {
+        "convolution": 1.375859394,
+        "attention": 1.937753034,
+        "ffn": 3.53473002,
+        "tail": 0.014485361,
+        "other": 0.0033887599999999907
+      },
+      "sparse_active_rows": 66,
+      "sparse_causal_support_rows": 141,
+      "vision_grouped_blocks": 6,
+      "vision_grouped_rows": 300,
+      "vision_grouped_late_queries": 900,
+      "vision_early_groups": [
+        559,
+        431,
+        388
+      ],
+      "late_ffn_layers": 19,
+      "late_ffn_reused_rows": 41,
+      "frozen_operator_reuse": {
+        "kv_rows": 209,
+        "conv_rows": 49
+      },
+      "vision_fmla": {
+        "batches": 46,
+        "pad_rows": 139
+      },
+      "vision_value12_layers": 3,
+      "q6_i16_batches": 10,
+      "q6_i16_fallback": {
+        "batches": 1,
+        "rows": 7
+      },
+      "q4_i8": {
+        "batches": 107,
+        "rows": 10776,
+        "padded": 212
+      },
+      "vision_q8_ilp": {
+        "batches": 18,
+        "rows": 5400
+      },
+      "question": "bicycle_color",
+      "role": "control",
+      "warmup": true,
+      "exact_d179_score": true
+    }
+  ],
+  "pairs": [
+    {
+      "control": {
+        "scene": "kitchen",
+        "seconds": 16.273990579,
+        "positions": 351,
+        "max_rss_kib": 1620708,
+        "sampled_swap_kib": 0,
+        "probabilities": {
+          "two": 0.0262211200533547,
+          "three": 0.9350077919810919,
+          "four": 0.038771087965553376
+        },
+        "reference": {
+          "two": 0.006802916936490456,
+          "three": 0.9807035475057365,
+          "four": 0.012493535557773269
+        },
+        "winner": "three",
+        "reference_winner": "three",
+        "max_abs_probability_delta": 0.045695755524644666,
+        "passed_quality_screen": true,
+        "wall_seconds": 20.15066802597721,
+        "child_cpu_seconds": 53.40992,
+        "major_faults": 208,
+        "block_input_operations": 81368,
+        "machine_active_cpu_seconds": 60.06,
+        "background_cpu_cores": 0.33001784315175353,
+        "timing_uncontended": false,
+        "ffn_rows": 1054,
+        "ffn_reused_rows": 599,
+        "vision_ffn_rows": 16800,
+        "vision_ffn_reused_rows": 10758,
+        "vision_keys": 7200,
+        "vision_attended_keys": 4500,
+        "phases_s": {
+          "vision": 9.116488118,
+          "prompt": 0.051538934,
+          "backbone_score": 7.105963527
+        },
+        "backbone_parts_s": {
+          "convolution": 1.404222782,
+          "attention": 2.021168396,
+          "ffn": 3.660297322,
+          "tail": 0.016938173,
+          "other": 0.0033368540000005
+        },
+        "sparse_active_rows": 67,
+        "sparse_causal_support_rows": 142,
+        "vision_grouped_blocks": 6,
+        "vision_grouped_rows": 300,
+        "vision_grouped_late_queries": 900,
+        "vision_early_groups": [
+          466,
+          385,
+          355
+        ],
+        "late_ffn_layers": 19,
+        "late_ffn_reused_rows": 35,
+        "frozen_operator_reuse": {
+          "kv_rows": 205,
+          "conv_rows": 38
+        },
+        "vision_fmla": {
+          "batches": 46,
+          "pad_rows": 126
+        },
+        "vision_value12_layers": 3,
+        "q6_i16_batches": 10,
+        "q6_i16_fallback": {
+          "batches": 1,
+          "rows": 7
+        },
+        "q4_i8": {
+          "batches": 107,
+          "rows": 11040,
+          "padded": 200
+        },
+        "vision_q8_ilp": {
+          "batches": 18,
+          "rows": 5400
+        },
+        "question": "lemon_count",
+        "role": "control",
+        "warmup": false,
+        "exact_d179_score": true
+      },
+      "conv_only": {
+        "scene": "kitchen",
+        "seconds": 16.355558037,
+        "positions": 351,
+        "max_rss_kib": 1620772,
+        "sampled_swap_kib": 0,
+        "probabilities": {
+          "two": 0.025766649552337574,
+          "three": 0.9377599912007067,
+          "four": 0.03647335924695572
+        },
+        "reference": {
+          "two": 0.006802916936490456,
+          "three": 0.9807035475057365,
+          "four": 0.012493535557773269
+        },
+        "winner": "three",
+        "reference_winner": "three",
+        "max_abs_probability_delta": 0.04294355630502977,
+        "passed_quality_screen": true,
+        "wall_seconds": 18.52824863800197,
+        "child_cpu_seconds": 52.803864999999995,
+        "major_faults": 104,
+        "block_input_operations": 40416,
+        "machine_active_cpu_seconds": 59.19,
+        "background_cpu_cores": 0.3446701911643099,
+        "timing_uncontended": false,
+        "ffn_rows": 1054,
+        "ffn_reused_rows": 595,
+        "vision_ffn_rows": 16800,
+        "vision_ffn_reused_rows": 10755,
+        "vision_keys": 7200,
+        "vision_attended_keys": 4500,
+        "phases_s": {
+          "vision": 8.99459864,
+          "prompt": 0.004653647,
+          "backbone_score": 7.35630575
+        },
+        "backbone_parts_s": {
+          "convolution": 1.518376445,
+          "attention": 1.981143577,
+          "ffn": 3.832940148,
+          "tail": 0.020529819,
+          "other": 0.0033157609999996396
+        },
+        "sparse_active_rows": 67,
+        "sparse_causal_support_rows": 142,
+        "vision_grouped_blocks": 6,
+        "vision_grouped_rows": 300,
+        "vision_grouped_late_queries": 900,
+        "vision_early_groups": [
+          466,
+          385,
+          356
+        ],
+        "late_ffn_layers": 19,
+        "late_ffn_reused_rows": 31,
+        "frozen_operator_reuse": {
+          "kv_rows": 209,
+          "conv_rows": 38
+        },
+        "vision_fmla": {
+          "batches": 36,
+          "pad_rows": 153
+        },
+        "vision_value12_layers": 3,
+        "q6_i16_batches": 10,
+        "q6_i16_fallback": {
+          "batches": 1,
+          "rows": 7
+        },
+        "q4_i8": {
+          "batches": 107,
+          "rows": 10999,
+          "padded": 201
+        },
+        "vision_q8_ilp": {
+          "batches": 18,
+          "rows": 5400
+        },
+        "vision_q8_resident": {
+          "batches": 10,
+          "rows": 7214,
+          "padded": 10
+        },
+        "question": "lemon_count",
+        "role": "conv_only",
+        "warmup": false,
+        "exact_d179_score": false
+      },
+      "all_early": {
+        "scene": "kitchen",
+        "seconds": 15.851854425,
+        "positions": 351,
+        "max_rss_kib": 1608844,
+        "sampled_swap_kib": 0,
+        "probabilities": {
+          "two": 0.026653175982955395,
+          "three": 0.9299108658966877,
+          "four": 0.043435958120356825
+        },
+        "reference": {
+          "two": 0.006802916936490456,
+          "three": 0.9807035475057365,
+          "four": 0.012493535557773269
+        },
+        "winner": "three",
+        "reference_winner": "three",
+        "max_abs_probability_delta": 0.05079268160904882,
+        "passed_quality_screen": false,
+        "wall_seconds": 17.537200325983576,
+        "child_cpu_seconds": 51.269397,
+        "major_faults": 35,
+        "block_input_operations": 22872,
+        "machine_active_cpu_seconds": 57.69,
+        "background_cpu_cores": 0.3661133408214004,
+        "timing_uncontended": false,
+        "ffn_rows": 1054,
+        "ffn_reused_rows": 599,
+        "vision_ffn_rows": 16800,
+        "vision_ffn_reused_rows": 10757,
+        "vision_keys": 7200,
+        "vision_attended_keys": 4500,
+        "phases_s": {
+          "vision": 8.159539512,
+          "prompt": 0.004429373,
+          "backbone_score": 7.68788554
+        },
+        "backbone_parts_s": {
+          "convolution": 1.577993422,
+          "attention": 2.184210783,
+          "ffn": 3.896948908,
+          "tail": 0.024992098,
+          "other": 0.0037403289999993206
+        },
+        "sparse_active_rows": 67,
+        "sparse_causal_support_rows": 142,
+        "vision_grouped_blocks": 6,
+        "vision_grouped_rows": 300,
+        "vision_grouped_late_queries": 900,
+        "vision_early_groups": [
+          466,
+          384,
+          356
+        ],
+        "late_ffn_layers": 19,
+        "late_ffn_reused_rows": 28,
+        "frozen_operator_reuse": {
+          "kv_rows": 207,
+          "conv_rows": 39
+        },
+        "vision_fmla": {
+          "batches": 0,
+          "pad_rows": 0
+        },
+        "vision_value12_layers": 3,
+        "q6_i16_batches": 10,
+        "q6_i16_fallback": {
+          "batches": 1,
+          "rows": 7
+        },
+        "q4_i8": {
+          "batches": 107,
+          "rows": 11029,
+          "padded": 171
+        },
+        "vision_q8_ilp": {
+          "batches": 18,
+          "rows": 5400
+        },
+        "vision_q8_resident": {
+          "batches": 46,
+          "rows": 34341,
+          "padded": 43
+        },
+        "question": "lemon_count",
+        "role": "all_early",
+        "warmup": false,
+        "exact_d179_score": false
+      }
+    },
+    {
+      "conv_only": {
+        "scene": "workbench",
+        "seconds": 16.119477492,
+        "positions": 355,
+        "max_rss_kib": 1619624,
+        "sampled_swap_kib": 0,
+        "probabilities": {
+          "blue": 0.8943639610153998,
+          "gray": 0.06271272116412911,
+          "black": 0.042923317820470944
+        },
+        "reference": {
+          "blue": 0.910563243736107,
+          "gray": 0.062320343391268386,
+          "black": 0.027116412872624555
+        },
+        "winner": "blue",
+        "reference_winner": "blue",
+        "max_abs_probability_delta": 0.016199282720707142,
+        "passed_quality_screen": true,
+        "wall_seconds": 19.740112890023738,
+        "child_cpu_seconds": 54.32926,
+        "major_faults": 267,
+        "block_input_operations": 64776,
+        "machine_active_cpu_seconds": 58.87,
+        "background_cpu_cores": 0.23002604013955763,
+        "timing_uncontended": true,
+        "ffn_rows": 1066,
+        "ffn_reused_rows": 657,
+        "vision_ffn_rows": 16800,
+        "vision_ffn_reused_rows": 10189,
+        "vision_keys": 7200,
+        "vision_attended_keys": 4500,
+        "phases_s": {
+          "vision": 8.966273522,
+          "prompt": 0.023863468,
+          "backbone_score": 7.129340502
+        },
+        "backbone_parts_s": {
+          "convolution": 1.40937853,
+          "attention": 2.030080198,
+          "ffn": 3.672236706,
+          "tail": 0.014283029,
+          "other": 0.0033620389999997613
+        },
+        "sparse_active_rows": 71,
+        "sparse_causal_support_rows": 145,
+        "vision_grouped_blocks": 6,
+        "vision_grouped_rows": 300,
+        "vision_grouped_late_queries": 900,
+        "vision_early_groups": [
+          596,
+          478,
+          406
+        ],
+        "late_ffn_layers": 19,
+        "late_ffn_reused_rows": 37,
+        "frozen_operator_reuse": {
+          "kv_rows": 221,
+          "conv_rows": 44
+        },
+        "vision_fmla": {
+          "batches": 36,
+          "pad_rows": 75
+        },
+        "vision_value12_layers": 3,
+        "q6_i16_batches": 10,
+        "q6_i16_fallback": {
+          "batches": 1,
+          "rows": 7
+        },
+        "q4_i8": {
+          "batches": 107,
+          "rows": 11107,
+          "padded": 173
+        },
+        "vision_q8_ilp": {
+          "batches": 18,
+          "rows": 5400
+        },
+        "vision_q8_resident": {
+          "batches": 10,
+          "rows": 7760,
+          "padded": 8
+        },
+        "question": "mat_color",
+        "role": "conv_only",
+        "warmup": false,
+        "exact_d179_score": false
+      },
+      "all_early": {
+        "scene": "workbench",
+        "seconds": 15.989199602,
+        "positions": 355,
+        "max_rss_kib": 1608440,
+        "sampled_swap_kib": 0,
+        "probabilities": {
+          "blue": 0.8952881511274624,
+          "gray": 0.05240175197217314,
+          "black": 0.05231009690036442
+        },
+        "reference": {
+          "blue": 0.910563243736107,
+          "gray": 0.062320343391268386,
+          "black": 0.027116412872624555
+        },
+        "winner": "blue",
+        "reference_winner": "blue",
+        "max_abs_probability_delta": 0.025193684027739867,
+        "passed_quality_screen": true,
+        "wall_seconds": 17.716802281996934,
+        "child_cpu_seconds": 52.132598,
+        "major_faults": 100,
+        "block_input_operations": 32384,
+        "machine_active_cpu_seconds": 58.53,
+        "background_cpu_cores": 0.361092362954277,
+        "timing_uncontended": false,
+        "ffn_rows": 1066,
+        "ffn_reused_rows": 653,
+        "vision_ffn_rows": 16800,
+        "vision_ffn_reused_rows": 10187,
+        "vision_keys": 7200,
+        "vision_attended_keys": 4500,
+        "phases_s": {
+          "vision": 8.490487213,
+          "prompt": 0.004514983,
+          "backbone_score": 7.494197406
+        },
+        "backbone_parts_s": {
+          "convolution": 1.504806008,
+          "attention": 2.218443377,
+          "ffn": 3.751844623,
+          "tail": 0.015726543,
+          "other": 0.0033768549999990682
+        },
+        "sparse_active_rows": 71,
+        "sparse_causal_support_rows": 145,
+        "vision_grouped_blocks": 6,
+        "vision_grouped_rows": 300,
+        "vision_grouped_late_queries": 900,
+        "vision_early_groups": [
+          596,
+          479,
+          406
+        ],
+        "late_ffn_layers": 19,
+        "late_ffn_reused_rows": 36,
+        "frozen_operator_reuse": {
+          "kv_rows": 218,
+          "conv_rows": 45
+        },
+        "vision_fmla": {
+          "batches": 0,
+          "pad_rows": 0
+        },
+        "vision_value12_layers": 3,
+        "q6_i16_batches": 10,
+        "q6_i16_fallback": {
+          "batches": 1,
+          "rows": 7
+        },
+        "q4_i8": {
+          "batches": 107,
+          "rows": 11163,
+          "padded": 185
+        },
+        "vision_q8_ilp": {
+          "batches": 18,
+          "rows": 5400
+        },
+        "vision_q8_resident": {
+          "batches": 46,
+          "rows": 36601,
+          "padded": 51
+        },
+        "question": "mat_color",
+        "role": "all_early",
+        "warmup": false,
+        "exact_d179_score": false
+      },
+      "control": {
+        "scene": "workbench",
+        "seconds": 16.863343654,
+        "positions": 355,
+        "max_rss_kib": 1619760,
+        "sampled_swap_kib": 0,
+        "probabilities": {
+          "blue": 0.9148193079700343,
+          "gray": 0.04120550394507817,
+          "black": 0.04397518808488757
+        },
+        "reference": {
+          "blue": 0.910563243736107,
+          "gray": 0.062320343391268386,
+          "black": 0.027116412872624555
+        },
+        "winner": "blue",
+        "reference_winner": "blue",
+        "max_abs_probability_delta": 0.021114839446190213,
+        "passed_quality_screen": true,
+        "wall_seconds": 18.729139674978796,
+        "child_cpu_seconds": 54.994192,
+        "major_faults": 17,
+        "block_input_operations": 17432,
+        "machine_active_cpu_seconds": 61.17,
+        "background_cpu_cores": 0.3297432827761212,
+        "timing_uncontended": false,
+        "ffn_rows": 1066,
+        "ffn_reused_rows": 653,
+        "vision_ffn_rows": 16800,
+        "vision_ffn_reused_rows": 10188,
+        "vision_keys": 7200,
+        "vision_attended_keys": 4500,
+        "phases_s": {
+          "vision": 9.414829339,
+          "prompt": 0.004583778,
+          "backbone_score": 7.443930537
+        },
+        "backbone_parts_s": {
+          "convolution": 1.458455361,
+          "attention": 2.226427633,
+          "ffn": 3.739098734,
+          "tail": 0.016383736,
+          "other": 0.003565072999999863
+        },
+        "sparse_active_rows": 71,
+        "sparse_causal_support_rows": 145,
+        "vision_grouped_blocks": 6,
+        "vision_grouped_rows": 300,
+        "vision_grouped_late_queries": 900,
+        "vision_early_groups": [
+          596,
+          479,
+          406
+        ],
+        "late_ffn_layers": 19,
+        "late_ffn_reused_rows": 37,
+        "frozen_operator_reuse": {
+          "kv_rows": 218,
+          "conv_rows": 45
+        },
+        "vision_fmla": {
+          "batches": 46,
+          "pad_rows": 122
+        },
+        "vision_value12_layers": 3,
+        "q6_i16_batches": 10,
+        "q6_i16_fallback": {
+          "batches": 1,
+          "rows": 7
+        },
+        "q4_i8": {
+          "batches": 107,
+          "rows": 11160,
+          "padded": 188
+        },
+        "vision_q8_ilp": {
+          "batches": 18,
+          "rows": 5400
+        },
+        "question": "mat_color",
+        "role": "control",
+        "warmup": false,
+        "exact_d179_score": true
+      }
+    },
+    {
+      "all_early": {
+        "scene": "workbench",
+        "seconds": 15.393085508,
+        "positions": 351,
+        "max_rss_kib": 1609556,
+        "sampled_swap_kib": 0,
+        "probabilities": {
+          "true": 0.010160919435815107,
+          "false": 0.989839080564185
+        },
+        "reference": {
+          "true": 0.010377830018146307,
+          "false": 0.9896221699818537
+        },
+        "winner": "false",
+        "reference_winner": "false",
+        "max_abs_probability_delta": 0.0002169105823313089,
+        "passed_quality_screen": true,
+        "wall_seconds": 16.71839713299414,
+        "child_cpu_seconds": 51.076885000000004,
+        "major_faults": 27,
+        "block_input_operations": 5568,
+        "machine_active_cpu_seconds": 56.14,
+        "background_cpu_cores": 0.3028469152708319,
+        "timing_uncontended": false,
+        "ffn_rows": 1054,
+        "ffn_reused_rows": 652,
+        "vision_ffn_rows": 16800,
+        "vision_ffn_reused_rows": 10187,
+        "vision_keys": 7200,
+        "vision_attended_keys": 4500,
+        "phases_s": {
+          "vision": 8.233374163,
+          "prompt": 0.108529769,
+          "backbone_score": 7.051181576
+        },
+        "backbone_parts_s": {
+          "convolution": 1.453047018,
+          "attention": 2.05673658,
+          "ffn": 3.523464451,
+          "tail": 0.014716226,
+          "other": 0.0032173010000002833
+        },
+        "sparse_active_rows": 67,
+        "sparse_causal_support_rows": 135,
+        "vision_grouped_blocks": 6,
+        "vision_grouped_rows": 300,
+        "vision_grouped_late_queries": 900,
+        "vision_early_groups": [
+          596,
+          479,
+          406
+        ],
+        "late_ffn_layers": 19,
+        "late_ffn_reused_rows": 16,
+        "frozen_operator_reuse": {
+          "kv_rows": 213,
+          "conv_rows": 40
+        },
+        "vision_fmla": {
+          "batches": 0,
+          "pad_rows": 0
+        },
+        "vision_value12_layers": 3,
+        "q6_i16_batches": 10,
+        "q6_i16_fallback": {
+          "batches": 1,
+          "rows": 7
+        },
+        "q4_i8": {
+          "batches": 107,
+          "rows": 10864,
+          "padded": 164
+        },
+        "vision_q8_ilp": {
+          "batches": 18,
+          "rows": 5400
+        },
+        "vision_q8_resident": {
+          "batches": 46,
+          "rows": 36601,
+          "padded": 51
+        },
+        "question": "screwdriver_right",
+        "role": "all_early",
+        "warmup": false,
+        "exact_d179_score": false
+      },
+      "control": {
+        "scene": "workbench",
+        "seconds": 16.530071574,
+        "positions": 351,
+        "max_rss_kib": 1620900,
+        "sampled_swap_kib": 0,
+        "probabilities": {
+          "true": 0.011473657165670975,
+          "false": 0.9885263428343289
+        },
+        "reference": {
+          "true": 0.010377830018146307,
+          "false": 0.9896221699818537
+        },
+        "winner": "false",
+        "reference_winner": "false",
+        "max_abs_probability_delta": 0.0010958271475247638,
+        "passed_quality_screen": true,
+        "wall_seconds": 17.72715289698681,
+        "child_cpu_seconds": 53.241794999999996,
+        "major_faults": 0,
+        "block_input_operations": 0,
+        "machine_active_cpu_seconds": 60.09,
+        "background_cpu_cores": 0.3863116113340478,
+        "timing_uncontended": false,
+        "ffn_rows": 1054,
+        "ffn_reused_rows": 653,
+        "vision_ffn_rows": 16800,
+        "vision_ffn_reused_rows": 10188,
+        "vision_keys": 7200,
+        "vision_attended_keys": 4500,
+        "phases_s": {
+          "vision": 9.818628194,
+          "prompt": 0.004660517,
+          "backbone_score": 6.706782863
+        },
+        "backbone_parts_s": {
+          "convolution": 1.339111001,
+          "attention": 1.870945382,
+          "ffn": 3.475351268,
+          "tail": 0.018133355,
+          "other": 0.0032418569999999036
+        },
+        "sparse_active_rows": 67,
+        "sparse_causal_support_rows": 131,
+        "vision_grouped_blocks": 6,
+        "vision_grouped_rows": 300,
+        "vision_grouped_late_queries": 900,
+        "vision_early_groups": [
+          596,
+          479,
+          406
+        ],
+        "late_ffn_layers": 19,
+        "late_ffn_reused_rows": 16,
+        "frozen_operator_reuse": {
+          "kv_rows": 215,
+          "conv_rows": 38
+        },
+        "vision_fmla": {
+          "batches": 46,
+          "pad_rows": 122
+        },
+        "vision_value12_layers": 3,
+        "q6_i16_batches": 10,
+        "q6_i16_fallback": {
+          "batches": 1,
+          "rows": 7
+        },
+        "q4_i8": {
+          "batches": 107,
+          "rows": 10832,
+          "padded": 136
+        },
+        "vision_q8_ilp": {
+          "batches": 18,
+          "rows": 5400
+        },
+        "question": "screwdriver_right",
+        "role": "control",
+        "warmup": false,
+        "exact_d179_score": true
+      },
+      "conv_only": {
+        "scene": "workbench",
+        "seconds": 15.909570583,
+        "positions": 351,
+        "max_rss_kib": 1620736,
+        "sampled_swap_kib": 0,
+        "probabilities": {
+          "true": 0.011035133604884069,
+          "false": 0.9889648663951158
+        },
+        "reference": {
+          "true": 0.010377830018146307,
+          "false": 0.9896221699818537
+        },
+        "winner": "false",
+        "reference_winner": "false",
+        "max_abs_probability_delta": 0.0006573035867378785,
+        "passed_quality_screen": true,
+        "wall_seconds": 17.322819805005565,
+        "child_cpu_seconds": 53.621788,
+        "major_faults": 0,
+        "block_input_operations": 0,
+        "machine_active_cpu_seconds": 58.77,
+        "background_cpu_cores": 0.2971924927899085,
+        "timing_uncontended": false,
+        "ffn_rows": 1054,
+        "ffn_reused_rows": 657,
+        "vision_ffn_rows": 16800,
+        "vision_ffn_reused_rows": 10189,
+        "vision_keys": 7200,
+        "vision_attended_keys": 4500,
+        "phases_s": {
+          "vision": 8.811278616,
+          "prompt": 0.00445615,
+          "backbone_score": 7.093835817
+        },
+        "backbone_parts_s": {
+          "convolution": 1.456051241,
+          "attention": 1.920689088,
+          "ffn": 3.698619583,
+          "tail": 0.015260865,
+          "other": 0.003215040000000613
+        },
+        "sparse_active_rows": 67,
+        "sparse_causal_support_rows": 135,
+        "vision_grouped_blocks": 6,
+        "vision_grouped_rows": 300,
+        "vision_grouped_late_queries": 900,
+        "vision_early_groups": [
+          596,
+          478,
+          406
+        ],
+        "late_ffn_layers": 19,
+        "late_ffn_reused_rows": 17,
+        "frozen_operator_reuse": {
+          "kv_rows": 217,
+          "conv_rows": 39
+        },
+        "vision_fmla": {
+          "batches": 36,
+          "pad_rows": 75
+        },
+        "vision_value12_layers": 3,
+        "q6_i16_batches": 10,
+        "q6_i16_fallback": {
+          "batches": 1,
+          "rows": 7
+        },
+        "q4_i8": {
+          "batches": 107,
+          "rows": 10791,
+          "padded": 169
+        },
+        "vision_q8_ilp": {
+          "batches": 18,
+          "rows": 5400
+        },
+        "vision_q8_resident": {
+          "batches": 10,
+          "rows": 7760,
+          "padded": 8
+        },
+        "question": "screwdriver_right",
+        "role": "conv_only",
+        "warmup": false,
+        "exact_d179_score": false
+      }
+    }
+  ]
+}

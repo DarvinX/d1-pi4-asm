@@ -1,0 +1,388 @@
+{
+  "cases": 4,
+  "correct": 4,
+  "reference_correct": 4,
+  "median_wall_s": 42.57857109350152,
+  "peak_rss_mib": 1432.4609375,
+  "max_drift": 0.0032019187553818107,
+  "measured": [
+    {
+      "scene": "3d-0132",
+      "seconds": 41.743115401,
+      "positions": 367,
+      "max_rss_kib": 1463768,
+      "sampled_swap_kib": 0,
+      "probabilities": {
+        "A": 0.04807654750903102,
+        "B": 0.9519234524909691
+      },
+      "reference": {
+        "A": 0.04571605258846035,
+        "B": 0.9542839474115398
+      },
+      "winner": "B",
+      "reference_winner": "B",
+      "max_abs_probability_delta": 0.002360494920570673,
+      "passed_quality_screen": true,
+      "wall_seconds": 42.082176053001604,
+      "wall_exit_wait": "pidfd",
+      "child_cpu_seconds": 142.374136,
+      "major_faults": 0,
+      "minor_faults": 61808,
+      "block_input_operations": 0,
+      "machine_active_cpu_seconds": 156.05,
+      "background_cpu_cores": 0.32497996260401457,
+      "timing_uncontended": false,
+      "phases_s": {
+        "vision": 16.540910638,
+        "prompt": 0.005150554,
+        "backbone_score": 25.197054209
+      },
+      "backbone_parts_s": {
+        "convolution": 3.207666093,
+        "attention": 6.18333237,
+        "ffn": 15.769315339,
+        "tail": 0.035019789,
+        "panel_loader_wait": 2.778e-06,
+        "other": 0.0017178400000013028
+      },
+      "vision_fmla": {
+        "batches": 38,
+        "pad_rows": 0
+      },
+      "vision_value12_layers": 6,
+      "q6_i16_batches": 11,
+      "q6_i16_fallback": {
+        "batches": 0,
+        "rows": 0
+      },
+      "q4_i8": {
+        "batches": 117,
+        "rows": 42939,
+        "padded": 117
+      },
+      "vision_q8_resident": {
+        "batches": 46,
+        "rows": 55200,
+        "padded": 0
+      },
+      "q4_i8_conv_slices": 0,
+      "vision_score12_layers": 6,
+      "parallel_activations": {
+        "swiglu": 37,
+        "gelu": 1,
+        "elements": 106298880
+      },
+      "parallel_pack": {
+        "jobs": 226,
+        "elements": 281226240
+      },
+      "q4_panel_crc_shards": 2,
+      "other_panel_crc_shards": 2,
+      "model_embedding_crc_rows": 71,
+      "deferred_model_crc": {
+        "tensors": 8,
+        "bytes": 49545216
+      },
+      "retained_panel_bytes": {
+        "q4": 735330304,
+        "vision": 99155968
+      },
+      "async_backbone_panels": {
+        "nice": 10,
+        "join_s": 2.778e-06
+      },
+      "case": "3d-0132",
+      "task": "Depth",
+      "truth": "B",
+      "correct": true,
+      "reference_correct": true,
+      "cache_prime_s": 22.39457408499584
+    },
+    {
+      "scene": "2d-1431",
+      "seconds": 42.741166075,
+      "positions": 381,
+      "max_rss_kib": 1465792,
+      "sampled_swap_kib": 0,
+      "probabilities": {
+        "A": 0.013787211590465268,
+        "B": 0.9862127884095347
+      },
+      "reference": {
+        "A": 0.011872467641369424,
+        "B": 0.9881275323586305
+      },
+      "winner": "B",
+      "reference_winner": "B",
+      "max_abs_probability_delta": 0.0019147439490958436,
+      "passed_quality_screen": true,
+      "wall_seconds": 43.07496613400144,
+      "wall_exit_wait": "pidfd",
+      "child_cpu_seconds": 146.27359199999998,
+      "major_faults": 0,
+      "minor_faults": 60565,
+      "block_input_operations": 0,
+      "machine_active_cpu_seconds": 160.43,
+      "background_cpu_cores": 0.3286458300619671,
+      "timing_uncontended": false,
+      "phases_s": {
+        "vision": 15.963561279,
+        "prompt": 0.005449327,
+        "backbone_score": 26.772155469
+      },
+      "backbone_parts_s": {
+        "convolution": 3.148251127,
+        "attention": 6.689285547,
+        "ffn": 16.898494252,
+        "tail": 0.034117787,
+        "panel_loader_wait": 4.129e-06,
+        "other": 0.0020026270000030877
+      },
+      "vision_fmla": {
+        "batches": 38,
+        "pad_rows": 0
+      },
+      "vision_value12_layers": 6,
+      "q6_i16_batches": 11,
+      "q6_i16_fallback": {
+        "batches": 0,
+        "rows": 0
+      },
+      "q4_i8": {
+        "batches": 117,
+        "rows": 44577,
+        "padded": 351
+      },
+      "vision_q8_resident": {
+        "batches": 46,
+        "rows": 55200,
+        "padded": 0
+      },
+      "q4_i8_conv_slices": 0,
+      "vision_score12_layers": 6,
+      "parallel_activations": {
+        "swiglu": 37,
+        "gelu": 1,
+        "elements": 108664320
+      },
+      "parallel_pack": {
+        "jobs": 226,
+        "elements": 287032320
+      },
+      "q4_panel_crc_shards": 2,
+      "other_panel_crc_shards": 2,
+      "model_embedding_crc_rows": 85,
+      "deferred_model_crc": {
+        "tensors": 8,
+        "bytes": 49545216
+      },
+      "retained_panel_bytes": {
+        "q4": 735330304,
+        "vision": 99155968
+      },
+      "async_backbone_panels": {
+        "nice": 10,
+        "join_s": 4.129e-06
+      },
+      "case": "2d-1431",
+      "task": "Relation",
+      "truth": "B",
+      "correct": true,
+      "reference_correct": true,
+      "cache_prime_s": 1.9650034930018592
+    },
+    {
+      "scene": "2d-0867",
+      "seconds": 40.781897085,
+      "positions": 359,
+      "max_rss_kib": 1461352,
+      "sampled_swap_kib": 0,
+      "probabilities": {
+        "A": 0.0022093305120662542,
+        "B": 0.9397443412145339,
+        "C": 0.04738471623518592,
+        "D": 0.0070856892745937965,
+        "E": 0.003575922763620277
+      },
+      "reference": {
+        "A": 0.002146532049685724,
+        "B": 0.9387381831114617,
+        "C": 0.04924750179970132,
+        "D": 0.006426949588114431,
+        "E": 0.0034408334510368484
+      },
+      "winner": "B",
+      "reference_winner": "B",
+      "max_abs_probability_delta": 0.0018627855645153985,
+      "passed_quality_screen": true,
+      "wall_seconds": 41.10886309899797,
+      "wall_exit_wait": "pidfd",
+      "child_cpu_seconds": 139.524293,
+      "major_faults": 0,
+      "minor_faults": 60951,
+      "block_input_operations": 0,
+      "machine_active_cpu_seconds": 152.74,
+      "background_cpu_cores": 0.3214807222514052,
+      "timing_uncontended": false,
+      "phases_s": {
+        "vision": 16.138636751,
+        "prompt": 0.004794653,
+        "backbone_score": 24.638465681
+      },
+      "backbone_parts_s": {
+        "convolution": 3.048444872,
+        "attention": 5.983319553,
+        "ffn": 15.579642711,
+        "tail": 0.025321113,
+        "panel_loader_wait": 2.667e-06,
+        "other": 0.0017347649999983616
+      },
+      "vision_fmla": {
+        "batches": 38,
+        "pad_rows": 0
+      },
+      "vision_value12_layers": 6,
+      "q6_i16_batches": 11,
+      "q6_i16_fallback": {
+        "batches": 0,
+        "rows": 0
+      },
+      "q4_i8": {
+        "batches": 117,
+        "rows": 42003,
+        "padded": 117
+      },
+      "vision_q8_resident": {
+        "batches": 46,
+        "rows": 55200,
+        "padded": 0
+      },
+      "q4_i8_conv_slices": 0,
+      "vision_score12_layers": 6,
+      "parallel_activations": {
+        "swiglu": 37,
+        "gelu": 1,
+        "elements": 104947200
+      },
+      "parallel_pack": {
+        "jobs": 226,
+        "elements": 277908480
+      },
+      "q4_panel_crc_shards": 2,
+      "other_panel_crc_shards": 2,
+      "model_embedding_crc_rows": 69,
+      "deferred_model_crc": {
+        "tensors": 8,
+        "bytes": 49545216
+      },
+      "retained_panel_bytes": {
+        "q4": 735330304,
+        "vision": 99155968
+      },
+      "async_backbone_panels": {
+        "nice": 10,
+        "join_s": 2.667e-06
+      },
+      "case": "2d-0867",
+      "task": "Count",
+      "truth": "B",
+      "correct": true,
+      "reference_correct": true,
+      "cache_prime_s": 2.096976758002711
+    },
+    {
+      "scene": "3d-0726",
+      "seconds": 43.088462016,
+      "positions": 382,
+      "max_rss_kib": 1466840,
+      "sampled_swap_kib": 0,
+      "probabilities": {
+        "A": 0.9157394438592823,
+        "B": 0.0842605561407178
+      },
+      "reference": {
+        "A": 0.9189413626146641,
+        "B": 0.08105863738533599
+      },
+      "winner": "A",
+      "reference_winner": "A",
+      "max_abs_probability_delta": 0.0032019187553818107,
+      "passed_quality_screen": true,
+      "wall_seconds": 43.446031193001545,
+      "wall_exit_wait": "pidfd",
+      "child_cpu_seconds": 147.03350099999997,
+      "major_faults": 0,
+      "minor_faults": 60252,
+      "block_input_operations": 0,
+      "machine_active_cpu_seconds": 161.45,
+      "background_cpu_cores": 0.33182545342190617,
+      "timing_uncontended": false,
+      "phases_s": {
+        "vision": 16.243815326,
+        "prompt": 0.005724192,
+        "backbone_score": 26.838922498
+      },
+      "backbone_parts_s": {
+        "convolution": 3.186794922,
+        "attention": 6.674033818,
+        "ffn": 16.951299247,
+        "tail": 0.02488625,
+        "panel_loader_wait": 3.445e-06,
+        "other": 0.0019048159999961456
+      },
+      "vision_fmla": {
+        "batches": 38,
+        "pad_rows": 0
+      },
+      "vision_value12_layers": 6,
+      "q6_i16_batches": 11,
+      "q6_i16_fallback": {
+        "batches": 0,
+        "rows": 0
+      },
+      "q4_i8": {
+        "batches": 117,
+        "rows": 44694,
+        "padded": 234
+      },
+      "vision_q8_resident": {
+        "batches": 46,
+        "rows": 55200,
+        "padded": 0
+      },
+      "q4_i8_conv_slices": 0,
+      "vision_score12_layers": 6,
+      "parallel_activations": {
+        "swiglu": 37,
+        "gelu": 1,
+        "elements": 108833280
+      },
+      "parallel_pack": {
+        "jobs": 226,
+        "elements": 287447040
+      },
+      "q4_panel_crc_shards": 2,
+      "other_panel_crc_shards": 2,
+      "model_embedding_crc_rows": 86,
+      "deferred_model_crc": {
+        "tensors": 8,
+        "bytes": 49545216
+      },
+      "retained_panel_bytes": {
+        "q4": 735330304,
+        "vision": 99155968
+      },
+      "async_backbone_panels": {
+        "nice": 10,
+        "join_s": 3.445e-06
+      },
+      "case": "3d-0726",
+      "task": "Distance",
+      "truth": "A",
+      "correct": true,
+      "reference_correct": true,
+      "cache_prime_s": 1.9941874430005555
+    }
+  ]
+}
