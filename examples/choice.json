@@ -1,0 +1,9 @@
+{
+  "type": "choice",
+  "instructions": "Which object is closest to the camera?",
+  "criteria": {
+    "A": "a person",
+    "B": "a bicycle",
+    "C": "a car"
+  }
+}
