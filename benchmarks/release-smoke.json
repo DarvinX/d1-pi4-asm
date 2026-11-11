@@ -1,0 +1,16 @@
+{
+  "target": "Raspberry Pi 4B, 4 GB, ARM64 Linux",
+  "release_binary_sha256": "0ad3e674afc5243cb8bad3f71e8645158a09899541ea5a3b1bb0f650f706621e",
+  "release_cli": {
+    "choice": {
+      "case": "2d-0036",
+      "answer": "A",
+      "score_bytes_match_benchmark": true
+    },
+    "count": {
+      "case": "2d-0221",
+      "answer": 8,
+      "score_bytes_match_benchmark": true
+    }
+  }
+}
