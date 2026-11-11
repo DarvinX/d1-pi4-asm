@@ -50,7 +50,7 @@ python3 -m pip install -r requirements.txt
 
 MODEL="$PWD/models/d1-2B-Q4_K_M.gguf"
 PROJECTOR="$PWD/models/mmproj-d1-2B-Q8_0.gguf"
-./tools/prepare-model.sh "$MODEL" "$PROJECTOR"
+bash tools/prepare-model.sh "$MODEL" "$PROJECTOR"
 make
 
 python3 research/d1-640x480/decide.py "$MODEL" "$PROJECTOR" photo.jpg examples/choice.json
