@@ -1,0 +1,707 @@
+{
+  "dataset": "nyu-visionx/CV-Bench",
+  "revision": "bc284db50d036958861cb60cdd7b77612052ce0d",
+  "seed": "20261111-cv-acceptance",
+  "pixels": "EXIF orientation, RGB, aspect-preserving Lanczos resize with gray padding to 640x480",
+  "source_sha256": {
+    "test_2d.jsonl": "f9c02a098935191cf0e53bfa8fa2458a71828fdc2df63c251516b1e242de3e43",
+    "test_3d.jsonl": "4e9156cefa59ad5d674f21a5c4e57c71de8c64ee3e5337e5f0ac7e3c6646c023"
+  },
+  "cases": [
+    {
+      "type": "3D",
+      "task": "Depth",
+      "question": "Which object is closer to the camera taking this photo, the phone (highlighted by a red box) or the chair (highlighted by a blue box)?",
+      "choices": [
+        "phone",
+        "chair"
+      ],
+      "answer": "(B)",
+      "prompt": "Which object is closer to the camera taking this photo, the phone (highlighted by a red box) or the chair (highlighted by a blue box)?\n(A) phone\n(B) chair",
+      "filename": "img/3D/depth/omni3d_sunrgbd_3.jpg",
+      "source": "Omni3D",
+      "source_dataset": "Omni3D_SUNRGBD",
+      "source_filename": "SUNRGBD/kv2/kinect2data/002791_2014-06-22_19-37-00_094959634447_rgbf000081-resize/image/0000081.jpg",
+      "target_class": null,
+      "target_size": null,
+      "bbox": [
+        [
+          230.9167327881,
+          69.3455657959,
+          284.3656005859,
+          106.7661209106
+        ],
+        [
+          410.4197692871,
+          153.0184173584,
+          504.5448303223,
+          315.9601745605
+        ]
+      ],
+      "id": "3d-0203",
+      "block": 1,
+      "question_spec": {
+        "type": "choice",
+        "instructions": "Which object is closer to the camera taking this photo, the phone (highlighted by a red box) or the chair (highlighted by a blue box)?",
+        "criteria": {
+          "A": "phone",
+          "B": "chair"
+        }
+      },
+      "truth": "B",
+      "original_sha256": "88c4df272c18751c9226c5e981c19e1046ff6d875713a8d3cedd29ecef7e034f",
+      "png_sha256": "458c157cb1308287fd4b4ee987b3c7e5e0cda2330a7556a37e4fb4e2652b1798",
+      "rgb_sha256": "7730298830c3771f193faefe6a65111289573e47f364804954d59b8d9cd98629",
+      "prompt_sha256": "69cf604faa6e7a2a7ade986138d876aa7a10163b4e9865b78519308c1203f1f6",
+      "label_plan_sha256": "ca3dae7c5034a57b1929096b9b32a2e26b8ad1c1d30b73dc7d0adac6af19b528"
+    },
+    {
+      "type": "3D",
+      "task": "Depth",
+      "question": "Which object is closer to the camera taking this photo, the barrier (highlighted by a red box) or the bus (highlighted by a blue box)?",
+      "choices": [
+        "barrier",
+        "bus"
+      ],
+      "answer": "(B)",
+      "prompt": "Which object is closer to the camera taking this photo, the barrier (highlighted by a red box) or the bus (highlighted by a blue box)?\n(A) barrier\n(B) bus",
+      "filename": "img/3D/depth/omni3d_nuscenes_81.jpg",
+      "source": "Omni3D",
+      "source_dataset": "Omni3D_nuScenes",
+      "source_filename": "nuScenes/samples/CAM_FRONT/n008-2018-08-30-15-31-50-0400__CAM_FRONT__1535657785862404.jpg",
+      "target_class": null,
+      "target_size": null,
+      "bbox": [
+        [
+          315.1040039062,
+          492.8088378906,
+          410.596282959,
+          515.5629882812
+        ],
+        [
+          962.8872680664,
+          318.2881164551,
+          1443.4078369141,
+          638.9277954102
+        ]
+      ],
+      "id": "3d-0481",
+      "block": 1,
+      "question_spec": {
+        "type": "choice",
+        "instructions": "Which object is closer to the camera taking this photo, the barrier (highlighted by a red box) or the bus (highlighted by a blue box)?",
+        "criteria": {
+          "A": "barrier",
+          "B": "bus"
+        }
+      },
+      "truth": "B",
+      "original_sha256": "4ddd5ca48a410649093b499cc64bb95932dccb5e93487f365632a2c12b0712f5",
+      "png_sha256": "8a12ddc506b45bf8eead2f0dd240d151c3fc837696a39a233d9c280729ab3df4",
+      "rgb_sha256": "02aadd6d339a7e1ec30f427a9b666346b9a00c058a8fbf1369c34b4174a2c742",
+      "prompt_sha256": "0708af8b813f12681238c2f17ffa87391aa7f518acb4f94a2f9d984cbedc5173",
+      "label_plan_sha256": "ca3dae7c5034a57b1929096b9b32a2e26b8ad1c1d30b73dc7d0adac6af19b528"
+    },
+    {
+      "type": "3D",
+      "task": "Distance",
+      "question": "Estimate the real-world distances between objects in this image. Which object is closer to the towel (highlighted by a red box), the sink (highlighted by a blue box) or the toilet (highlighted by a green box)?",
+      "choices": [
+        "sink",
+        "toilet"
+      ],
+      "answer": "(A)",
+      "prompt": "Estimate the real-world distances between objects in this image. Which object is closer to the towel (highlighted by a red box), the sink (highlighted by a blue box) or the toilet (highlighted by a green box)?\n(A) sink\n(B) toilet",
+      "filename": "img/3D/distance/omni3d_sunrgbd_170.jpg",
+      "source": "Omni3D",
+      "source_dataset": "Omni3D_SUNRGBD",
+      "source_filename": "SUNRGBD/kv2/kinect2data/002781_2014-06-22_19-25-44_094959634447_rgbf000084-resize/image/0000084.jpg",
+      "target_class": null,
+      "target_size": null,
+      "bbox": [
+        [
+          546.582824707,
+          164.249206543,
+          698.3947753906,
+          243.8157043457
+        ],
+        [
+          86.1634979248,
+          101.5431365967,
+          184.1442260742,
+          223.7850646973
+        ],
+        [
+          532.3194580078,
+          28.4233341217,
+          638.3159179688,
+          223.6268310547
+        ]
+      ],
+      "id": "3d-0970",
+      "block": 1,
+      "question_spec": {
+        "type": "choice",
+        "instructions": "Estimate the real-world distances between objects in this image. Which object is closer to the towel (highlighted by a red box), the sink (highlighted by a blue box) or the toilet (highlighted by a green box)?",
+        "criteria": {
+          "A": "sink",
+          "B": "toilet"
+        }
+      },
+      "truth": "A",
+      "original_sha256": "703f01fe4824b50b152be7527d22d2bef1b71caf323b4b9715473c77ed800890",
+      "png_sha256": "109a1749737029376d07d099c80854aae0856b6d19e1bdb229a4626f51914d46",
+      "rgb_sha256": "284e5d265c72265f2c20556e44fee7f181192daa8bbf4f74888b08b1fd43d61f",
+      "prompt_sha256": "4ea30854927d55f16f81e9a55e55c3df76eed0b1538190c943c0de58bded2f54",
+      "label_plan_sha256": "ca3dae7c5034a57b1929096b9b32a2e26b8ad1c1d30b73dc7d0adac6af19b528"
+    },
+    {
+      "type": "2D",
+      "task": "Count",
+      "question": "How many fireplaces are in the image?",
+      "choices": [
+        "1",
+        "2",
+        "0",
+        "3"
+      ],
+      "answer": "(A)",
+      "prompt": "How many fireplaces are in the image? Select from the following choices.\n(A) 1\n(B) 2\n(C) 0\n(D) 3",
+      "filename": "img/2D/count/ade20k_155.png",
+      "source": "ADE20K",
+      "source_dataset": "ADE20K Validation Set",
+      "source_filename": "ADE_val_00000512.jpg",
+      "target_class": null,
+      "target_size": null,
+      "bbox": null,
+      "id": "2d-0036",
+      "block": 1,
+      "question_spec": {
+        "type": "choice",
+        "instructions": "How many fireplaces are in the image?",
+        "criteria": {
+          "A": "1",
+          "B": "2",
+          "C": "0",
+          "D": "3"
+        }
+      },
+      "truth": "A",
+      "original_sha256": "28426d66fb1ea2a4233ef173e5e95c6cc514d8f2888bd5ee58948015e9de6014",
+      "png_sha256": "05e9014d5d287e2b4a92efa02607e45a99439e9d05d21ad952bec8a4a9231320",
+      "rgb_sha256": "bff761526338a67cde702efb10527f7b1dce7c697a603715e1ba39378e03b70a",
+      "prompt_sha256": "0fe6ebb4ebc90ae5c978903716e95011ea11581eb3a7e94eccc5c71c175343a7",
+      "label_plan_sha256": "0265a35909e63cee721e37b161d3c220ed86e7e570160bd9e2c1f9bea0125d71"
+    },
+    {
+      "type": "3D",
+      "task": "Depth",
+      "question": "Which object is closer to the camera taking this photo, the printer (highlighted by a red box) or the bin (highlighted by a blue box)?",
+      "choices": [
+        "printer",
+        "bin"
+      ],
+      "answer": "(A)",
+      "prompt": "Which object is closer to the camera taking this photo, the printer (highlighted by a red box) or the bin (highlighted by a blue box)?\n(A) printer\n(B) bin",
+      "filename": "img/3D/depth/omni3d_sunrgbd_112.jpg",
+      "source": "Omni3D",
+      "source_dataset": "Omni3D_SUNRGBD",
+      "source_filename": "SUNRGBD/kv2/kinect2data/001183_2014-06-17_15-51-41_260595134347_rgbf000091-resize/image/0000091.jpg",
+      "target_class": null,
+      "target_size": null,
+      "bbox": [
+        [
+          219.7233428955,
+          68.1480102539,
+          425.4305114746,
+          269.6507263184
+        ],
+        [
+          590.71875,
+          268.845703125,
+          672.6129760742,
+          348.088470459
+        ]
+      ],
+      "id": "3d-0312",
+      "block": 1,
+      "question_spec": {
+        "type": "choice",
+        "instructions": "Which object is closer to the camera taking this photo, the printer (highlighted by a red box) or the bin (highlighted by a blue box)?",
+        "criteria": {
+          "A": "printer",
+          "B": "bin"
+        }
+      },
+      "truth": "A",
+      "original_sha256": "31af0073fe42b052a68c078dfe68fd2faf19c1d1dbd3c0e7d0b9247887396d5b",
+      "png_sha256": "2f62970d033caba87295de5777f89afa5ff604aa39d828594772f13918ce76c9",
+      "rgb_sha256": "0a729e4512a08107c3177f79566c9540e79a4316fa713bcd5e47ba0365ea6a3a",
+      "prompt_sha256": "f235f60415b002ea4973cc4f80e443bf31409b952d76ab463cafb274f822990a",
+      "label_plan_sha256": "ca3dae7c5034a57b1929096b9b32a2e26b8ad1c1d30b73dc7d0adac6af19b528"
+    },
+    {
+      "type": "3D",
+      "task": "Depth",
+      "question": "Which object is closer to the camera taking this photo, the car (highlighted by a red box) or the bus (highlighted by a blue box)?",
+      "choices": [
+        "car",
+        "bus"
+      ],
+      "answer": "(A)",
+      "prompt": "Which object is closer to the camera taking this photo, the car (highlighted by a red box) or the bus (highlighted by a blue box)?\n(A) car\n(B) bus",
+      "filename": "img/3D/depth/omni3d_nuscenes_85.jpg",
+      "source": "Omni3D",
+      "source_dataset": "Omni3D_nuScenes",
+      "source_filename": "nuScenes/samples/CAM_FRONT/n015-2018-09-25-13-17-43+0800__CAM_FRONT__1537852775162460.jpg",
+      "target_class": null,
+      "target_size": null,
+      "bbox": [
+        [
+          745.5833740234,
+          471.7254943848,
+          765.9302368164,
+          495.1051330566
+        ],
+        [
+          753.72265625,
+          458.8678283691,
+          781.5931396484,
+          494.6650390625
+        ]
+      ],
+      "id": "3d-0485",
+      "block": 1,
+      "question_spec": {
+        "type": "choice",
+        "instructions": "Which object is closer to the camera taking this photo, the car (highlighted by a red box) or the bus (highlighted by a blue box)?",
+        "criteria": {
+          "A": "car",
+          "B": "bus"
+        }
+      },
+      "truth": "A",
+      "original_sha256": "e55ff2ed5de3af06f127beb3540a786e5c34b7d540b28cac39194b7c4fd2a9d8",
+      "png_sha256": "fd34a0a3e4f17dc178b006fd5c824ea6a3f0148178668e6347a5f02468ab9b04",
+      "rgb_sha256": "4fa843a3647196142f7e4e4ce95203b3f9f38a709e5effea77aebfadb4cfa1b2",
+      "prompt_sha256": "5ca630198a12873beb9c567c014516cf557fb9dc534d4f816e4e1c8df165e52e",
+      "label_plan_sha256": "ca3dae7c5034a57b1929096b9b32a2e26b8ad1c1d30b73dc7d0adac6af19b528"
+    },
+    {
+      "type": "2D",
+      "task": "Relation",
+      "question": "Considering the relative positions of the palette (annotated by the red box) and the wall in the image provided, where is the palette (annotated by the red box) located with respect to the wall?",
+      "choices": [
+        "left",
+        "right"
+      ],
+      "answer": "(B)",
+      "prompt": "Considering the relative positions of the palette (annotated by the red box) and the wall in the image provided, where is the palette (annotated by the red box) located with respect to the wall? Select from the following choices.\n(A) left\n(B) right",
+      "filename": "img/2D/relation/ade20k_5.png",
+      "source": "ADE20K",
+      "source_dataset": "ADE20K Validation Set",
+      "source_filename": "ADE_val_00000037.jpg",
+      "target_class": null,
+      "target_size": null,
+      "bbox": null,
+      "id": "2d-0544",
+      "block": 1,
+      "question_spec": {
+        "type": "choice",
+        "instructions": "Considering the relative positions of the palette (annotated by the red box) and the wall in the image provided, where is the palette (annotated by the red box) located with respect to the wall?",
+        "criteria": {
+          "A": "left",
+          "B": "right"
+        }
+      },
+      "truth": "B",
+      "original_sha256": "619679dc442151465df61074a8c8a62f324b88593005369bbc919e01a1444365",
+      "png_sha256": "eada5141638c9fc631607235e75e8208ec7aed53cb40d79572d5a7ffe74fdb9a",
+      "rgb_sha256": "37a2fce5eaa1b1ba0a8e992e41a9e0213e961c9fbe0fe829610a3cdc8443bd4e",
+      "prompt_sha256": "c485192151ee73b365742271bc3c0eb93016a083ac66843c3708e2a674c16524",
+      "label_plan_sha256": "ca3dae7c5034a57b1929096b9b32a2e26b8ad1c1d30b73dc7d0adac6af19b528"
+    },
+    {
+      "type": "2D",
+      "task": "Relation",
+      "question": "Considering the relative positions of the wall (annotated by the red box) and the wall recessed light in the image provided, where is the wall (annotated by the red box) located with respect to the wall recessed light?",
+      "choices": [
+        "left",
+        "right"
+      ],
+      "answer": "(A)",
+      "prompt": "Considering the relative positions of the wall (annotated by the red box) and the wall recessed light in the image provided, where is the wall (annotated by the red box) located with respect to the wall recessed light? Select from the following choices.\n(A) left\n(B) right",
+      "filename": "img/2D/relation/ade20k_49.png",
+      "source": "ADE20K",
+      "source_dataset": "ADE20K Validation Set",
+      "source_filename": "ADE_val_00000937.jpg",
+      "target_class": null,
+      "target_size": null,
+      "bbox": null,
+      "id": "2d-0538",
+      "block": 1,
+      "question_spec": {
+        "type": "choice",
+        "instructions": "Considering the relative positions of the wall (annotated by the red box) and the wall recessed light in the image provided, where is the wall (annotated by the red box) located with respect to the wall recessed light?",
+        "criteria": {
+          "A": "left",
+          "B": "right"
+        }
+      },
+      "truth": "A",
+      "original_sha256": "178637a06fcd4376f97ed9278940fdb6150262685c144c3b2b1c8be0ba809ed1",
+      "png_sha256": "14892b31944bbb45b91acfd8353947cd17d362f902baa4a241244f19664e533a",
+      "rgb_sha256": "ea82fd7a377b52c53f1abb6512275c3d4a35ed8f99bc03a25f3039961f807b39",
+      "prompt_sha256": "c4847c66aec95615d498851dddcb2ebc023f472a483404b398ed1a0944d5af15",
+      "label_plan_sha256": "ca3dae7c5034a57b1929096b9b32a2e26b8ad1c1d30b73dc7d0adac6af19b528"
+    },
+    {
+      "type": "3D",
+      "task": "Distance",
+      "question": "Estimate the real-world distances between objects in this image. Which object is closer to the bottle (highlighted by a red box), the box (highlighted by a blue box) or the cup (highlighted by a green box)?",
+      "choices": [
+        "box",
+        "cup"
+      ],
+      "answer": "(B)",
+      "prompt": "Estimate the real-world distances between objects in this image. Which object is closer to the bottle (highlighted by a red box), the box (highlighted by a blue box) or the cup (highlighted by a green box)?\n(A) box\n(B) cup",
+      "filename": "img/3D/distance/omni3d_sunrgbd_8.jpg",
+      "source": "Omni3D",
+      "source_dataset": "Omni3D_SUNRGBD",
+      "source_filename": "SUNRGBD/xtion/sun3ddata/mit_w85_4/4_1/0002257-000075678727//image/0002257-000075678727.jpg",
+      "target_class": null,
+      "target_size": null,
+      "bbox": [
+        [
+          322.3013000488,
+          6.0750079155,
+          394.5945739746,
+          60.0999679565
+        ],
+        [
+          152.1676025391,
+          40.1141929626,
+          197.6831970215,
+          76.2490921021
+        ],
+        [
+          86.8374938965,
+          44.9410514832,
+          124.803276062,
+          83.8078384399
+        ]
+      ],
+      "id": "3d-0808",
+      "block": 1,
+      "question_spec": {
+        "type": "choice",
+        "instructions": "Estimate the real-world distances between objects in this image. Which object is closer to the bottle (highlighted by a red box), the box (highlighted by a blue box) or the cup (highlighted by a green box)?",
+        "criteria": {
+          "A": "box",
+          "B": "cup"
+        }
+      },
+      "truth": "B",
+      "original_sha256": "6752c40ccf037cc4557508c81354b034cccb54eab72a57bd97c155c2199298ce",
+      "png_sha256": "3aa4a0fdb83d6db5f370c8b630da4f639963a3f07515458c46404abe2e1811d2",
+      "rgb_sha256": "d4e4b7e2c2d7d0f3857787245debcd2a110ad5bae44196d8541b23f8e840a995",
+      "prompt_sha256": "d9b3ef118bf7cdb42a4a309688877cef9e5eaf281053e8ca1c59c33a5e7c9fa4",
+      "label_plan_sha256": "ca3dae7c5034a57b1929096b9b32a2e26b8ad1c1d30b73dc7d0adac6af19b528"
+    },
+    {
+      "type": "2D",
+      "task": "Count",
+      "question": "How many beds are in the image?",
+      "choices": [
+        "2",
+        "0",
+        "1",
+        "3"
+      ],
+      "answer": "(C)",
+      "prompt": "How many beds are in the image? Select from the following choices.\n(A) 2\n(B) 0\n(C) 1\n(D) 3",
+      "filename": "img/2D/count/coco_201.png",
+      "source": "COCO",
+      "source_dataset": "COCO 2017 Validation Set",
+      "source_filename": "/coco/val2017/000000565563.jpg",
+      "target_class": "bed",
+      "target_size": 7069.0,
+      "bbox": null,
+      "id": "2d-0709",
+      "block": 1,
+      "question_spec": {
+        "type": "choice",
+        "instructions": "How many beds are in the image?",
+        "criteria": {
+          "A": "2",
+          "B": "0",
+          "C": "1",
+          "D": "3"
+        }
+      },
+      "truth": "C",
+      "original_sha256": "1e6f1e3b345e1a35be647b982ed722cfbcc84683ea463967a7b977b25d177b37",
+      "png_sha256": "7ce736cd7b627c6309f10ec817d950817c50cb26d8cd5e39aa3b5cb63257841f",
+      "rgb_sha256": "41d7512aa56ab52014adfb0ec7600b7a6ffbbe0ae93d46fc35ec66d3fcc561b9",
+      "prompt_sha256": "428a8f0595f4718c7d793068136b8c6c1c2b4570bd68fdbdb4f936de03776405",
+      "label_plan_sha256": "0265a35909e63cee721e37b161d3c220ed86e7e570160bd9e2c1f9bea0125d71"
+    },
+    {
+      "type": "2D",
+      "task": "Relation",
+      "question": "Considering the relative positions of the bottle (annotated by the red box) and the knife in the image provided, where is the bottle (annotated by the red box) located with respect to the knife?",
+      "choices": [
+        "left",
+        "right"
+      ],
+      "answer": "(A)",
+      "prompt": "Considering the relative positions of the bottle (annotated by the red box) and the knife in the image provided, where is the bottle (annotated by the red box) located with respect to the knife? Select from the following choices.\n(A) left\n(B) right",
+      "filename": "img/2D/relation/coco_369.png",
+      "source": "COCO",
+      "source_dataset": "COCO 2017 Validation Set",
+      "source_filename": "/coco/val2017/000000559513.jpg",
+      "target_class": "bottle",
+      "target_size": 8645.0,
+      "bbox": null,
+      "id": "2d-1260",
+      "block": 1,
+      "question_spec": {
+        "type": "choice",
+        "instructions": "Considering the relative positions of the bottle (annotated by the red box) and the knife in the image provided, where is the bottle (annotated by the red box) located with respect to the knife?",
+        "criteria": {
+          "A": "left",
+          "B": "right"
+        }
+      },
+      "truth": "A",
+      "original_sha256": "6b22eaf5a0922f0729a412018ef957aa3969b83a82d21570abbba142b6dbe6fe",
+      "png_sha256": "0fb7dfe30f0e647a7db61710991dd2b36a579474c1b4c3fabdd9a25fcb4b5b8f",
+      "rgb_sha256": "4aa8686f9a195cf14aa5e579eabdd710c050700e4e3e28eb6dbf9363433ed534",
+      "prompt_sha256": "360515883ebbb171b8149676f941799ffe79c332731c06ee22da9a404455531d",
+      "label_plan_sha256": "ca3dae7c5034a57b1929096b9b32a2e26b8ad1c1d30b73dc7d0adac6af19b528"
+    },
+    {
+      "type": "3D",
+      "task": "Distance",
+      "question": "Estimate the real-world distances between objects in this image. Which object is closer to the car (highlighted by a red box), the traffic cone (highlighted by a blue box) or the bus (highlighted by a green box)?",
+      "choices": [
+        "traffic cone",
+        "bus"
+      ],
+      "answer": "(A)",
+      "prompt": "Estimate the real-world distances between objects in this image. Which object is closer to the car (highlighted by a red box), the traffic cone (highlighted by a blue box) or the bus (highlighted by a green box)?\n(A) traffic cone\n(B) bus",
+      "filename": "img/3D/distance/omni3d_nuscenes_79.jpg",
+      "source": "Omni3D",
+      "source_dataset": "Omni3D_nuScenes",
+      "source_filename": "nuScenes/samples/CAM_FRONT/n015-2018-07-11-11-54-16+0800__CAM_FRONT__1531281836662460.jpg",
+      "target_class": null,
+      "target_size": null,
+      "bbox": [
+        [
+          1202.8117675781,
+          549.0494384766,
+          1245.8721923828,
+          619.1220703125
+        ],
+        [
+          815.0611572266,
+          422.1461791992,
+          925.9429321289,
+          531.1330566406
+        ],
+        [
+          914.6052856445,
+          477.3936767578,
+          1106.9711914062,
+          618.7964477539
+        ]
+      ],
+      "id": "3d-1079",
+      "block": 1,
+      "question_spec": {
+        "type": "choice",
+        "instructions": "Estimate the real-world distances between objects in this image. Which object is closer to the car (highlighted by a red box), the traffic cone (highlighted by a blue box) or the bus (highlighted by a green box)?",
+        "criteria": {
+          "A": "traffic cone",
+          "B": "bus"
+        }
+      },
+      "truth": "A",
+      "original_sha256": "ccaed5748095de59724c94c7f12844150901a81b2930031d7a7ee22fb7c4c9f5",
+      "png_sha256": "c05e13cbb07ba76483cb12e52bb5b23fd50d159b87451c20257987cb495ebf43",
+      "rgb_sha256": "cb43e72078e825481798cdad5083c125ea088375794949a8a01aa73764c0d408",
+      "prompt_sha256": "794176a21d975e27f1ca06e1443b19728886c2af006d41ab422124544b7841f0",
+      "label_plan_sha256": "ca3dae7c5034a57b1929096b9b32a2e26b8ad1c1d30b73dc7d0adac6af19b528"
+    },
+    {
+      "type": "2D",
+      "task": "Relation",
+      "question": "Considering the relative positions of the fire hydrant and the truck in the image provided, where is the fire hydrant located with respect to the truck?",
+      "choices": [
+        "left",
+        "right"
+      ],
+      "answer": "(B)",
+      "prompt": "Considering the relative positions of the fire hydrant and the truck in the image provided, where is the fire hydrant located with respect to the truck? Select from the following choices.\n(A) left\n(B) right",
+      "filename": "img/2D/relation/coco_558.png",
+      "source": "COCO",
+      "source_dataset": "COCO 2017 Validation Set",
+      "source_filename": "/coco/val2017/000000009769.jpg",
+      "target_class": "fire hydrant",
+      "target_size": 161.0,
+      "bbox": null,
+      "id": "2d-1379",
+      "block": 1,
+      "question_spec": {
+        "type": "choice",
+        "instructions": "Considering the relative positions of the fire hydrant and the truck in the image provided, where is the fire hydrant located with respect to the truck?",
+        "criteria": {
+          "A": "left",
+          "B": "right"
+        }
+      },
+      "truth": "B",
+      "original_sha256": "f5e6d63081ba8fbb2a59770144d7c2350de6a1a8288e15565df7dd1bd87d85bf",
+      "png_sha256": "bdb00e6f16134db2077c2c9f46ef1e6d8ab85e8d0e3b8614baf2d91fd4477f58",
+      "rgb_sha256": "e4b47c8e170a71d90081203c941f1a498f5aecd5b27c3ec145fdf8d416109718",
+      "prompt_sha256": "794c914ddd5ce3de1dbe1b0be04764409f4f57229e451a67073f94e758ae2f9f",
+      "label_plan_sha256": "ca3dae7c5034a57b1929096b9b32a2e26b8ad1c1d30b73dc7d0adac6af19b528"
+    },
+    {
+      "type": "3D",
+      "task": "Distance",
+      "question": "Estimate the real-world distances between objects in this image. Which object is closer to the car (highlighted by a red box), the bus (highlighted by a blue box) or the motorcycle (highlighted by a green box)?",
+      "choices": [
+        "bus",
+        "motorcycle"
+      ],
+      "answer": "(B)",
+      "prompt": "Estimate the real-world distances between objects in this image. Which object is closer to the car (highlighted by a red box), the bus (highlighted by a blue box) or the motorcycle (highlighted by a green box)?\n(A) bus\n(B) motorcycle",
+      "filename": "img/3D/distance/omni3d_nuscenes_179.jpg",
+      "source": "Omni3D",
+      "source_dataset": "Omni3D_nuScenes",
+      "source_filename": "nuScenes/samples/CAM_FRONT/n015-2018-07-11-11-54-16+0800__CAM_FRONT__1531281624362460.jpg",
+      "target_class": null,
+      "target_size": null,
+      "bbox": [
+        [
+          836.3847045898,
+          465.9530334473,
+          886.4702758789,
+          517.3053588867
+        ],
+        [
+          1051.3089599609,
+          482.1541137695,
+          1094.802734375,
+          549.7967529297
+        ],
+        [
+          781.4482421875,
+          473.2392272949,
+          865.7373657227,
+          550.9321289062
+        ]
+      ],
+      "id": "3d-1179",
+      "block": 1,
+      "question_spec": {
+        "type": "choice",
+        "instructions": "Estimate the real-world distances between objects in this image. Which object is closer to the car (highlighted by a red box), the bus (highlighted by a blue box) or the motorcycle (highlighted by a green box)?",
+        "criteria": {
+          "A": "bus",
+          "B": "motorcycle"
+        }
+      },
+      "truth": "B",
+      "original_sha256": "c19c7bb28f2fad126c5f6906614b8dbf6dc8625578f9f307d6093c05aa72fe0f",
+      "png_sha256": "bb005cad178843cc20a7a77d922b315c78ceb61274a2202e49865a6f5d870b79",
+      "rgb_sha256": "2f528c03fddb74c26e1ba009524e1cc2ad31c3fb034d257c93fc9ef41eb37132",
+      "prompt_sha256": "5786bd8c50b15b9bd9c22a93a53da9596f4d261e5dbdc380f424976bc5938bdb",
+      "label_plan_sha256": "ca3dae7c5034a57b1929096b9b32a2e26b8ad1c1d30b73dc7d0adac6af19b528"
+    },
+    {
+      "type": "2D",
+      "task": "Count",
+      "question": "How many bears are in the image?",
+      "choices": [
+        "1",
+        "2",
+        "4",
+        "3",
+        "0"
+      ],
+      "answer": "(B)",
+      "prompt": "How many bears are in the image? Select from the following choices.\n(A) 1\n(B) 2\n(C) 4\n(D) 3\n(E) 0",
+      "filename": "img/2D/count/coco_295.png",
+      "source": "COCO",
+      "source_dataset": "COCO 2017 Validation Set",
+      "source_filename": "/coco/val2017/000000173033.jpg",
+      "target_class": "bear",
+      "target_size": 5041.0,
+      "bbox": null,
+      "id": "2d-0795",
+      "block": 1,
+      "question_spec": {
+        "type": "choice",
+        "instructions": "How many bears are in the image?",
+        "criteria": {
+          "A": "1",
+          "B": "2",
+          "C": "4",
+          "D": "3",
+          "E": "0"
+        }
+      },
+      "truth": "B",
+      "original_sha256": "07d41032e885a982cc42f7c2eda86732de7ba5eff15268cfbe7e6e32a4d63842",
+      "png_sha256": "a63a04192be3e28365c76aec43a9f15b4a9b5525cba8b6a659214322d56c22f2",
+      "rgb_sha256": "47c36868081ab14058a8525f56264e54bcf824a0e0a348dfdcf5c17fa0e141f4",
+      "prompt_sha256": "1ce12a919d991e0a627a53066c875564ca5ed3729b1c1b4a71891d805e0f4454",
+      "label_plan_sha256": "9e32f7ce6644876fd329e042ce59401fa87a05e302c37e7ca72da6423568c1d9"
+    },
+    {
+      "type": "2D",
+      "task": "Count",
+      "question": "How many desk lamps are in the image?",
+      "choices": [
+        "5",
+        "0",
+        "7",
+        "4",
+        "3",
+        "6"
+      ],
+      "answer": "(F)",
+      "prompt": "How many desk lamps are in the image? Select from the following choices.\n(A) 5\n(B) 0\n(C) 7\n(D) 4\n(E) 3\n(F) 6",
+      "filename": "img/2D/count/ade20k_351.png",
+      "source": "ADE20K",
+      "source_dataset": "ADE20K Validation Set",
+      "source_filename": "ADE_val_00000618.jpg",
+      "target_class": null,
+      "target_size": null,
+      "bbox": null,
+      "id": "2d-0125",
+      "block": 1,
+      "question_spec": {
+        "type": "choice",
+        "instructions": "How many desk lamps are in the image?",
+        "criteria": {
+          "A": "5",
+          "B": "0",
+          "C": "7",
+          "D": "4",
+          "E": "3",
+          "F": "6"
+        }
+      },
+      "truth": "F",
+      "original_sha256": "776c8fe27eac3ab5776032bb17cbe59e694756aad465a5ad3ff482b45d42f214",
+      "png_sha256": "45f04eb56ccbbe16ed8d68fc5867ff4504b0bfb7447c9cac993eb1ca6acffd3b",
+      "rgb_sha256": "67c31347da470694b74d3051694ca89643cf92d49813265b6aebf0da9225fbaa",
+      "prompt_sha256": "950d9f81e2f6b5506d1374e3be9d3cc9dd946283bca8038cfdc68fde13795427",
+      "label_plan_sha256": "4829474c2d4f5a8f55c912107aaa8c9409d24b8d04b63ed21cf11c84d035443e"
+    }
+  ],
+  "excluded_manifest_sha256": "38d029e87441feb50d8e5a803f5803db2a194083a06c04d00b303e02ca8f953d"
+}
